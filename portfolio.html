@@ -4,93 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио инженерных проектов — HOTPLAN Кейсы</title>
+    <title>Портфолио инженерных проектов: рестораны, офисы, квартиры | Hot-Plan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
-        body { font-family: 'Inter', sans-serif; color: var(--text-main); }
-        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; }
-        h1, h2, h3 { color: var(--brand-dark); font-weight: 800; text-transform: uppercase; }
-        .bg-grid { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 40px 40px; }
+        :root { --brand-orange: #fc670c; --brand-dark: #111827; }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-white">
-    <header class="bg-[#111827] border-b border-white/5 py-4">
+    <header class="bg-[#111827] py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
-            <nav class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/70">
-                <a href="services.html" class="hover:text-[#fc670c]">Услуги</a>
+            <a href="index.html" class="font-black text-2xl text-white">HOT<span class="text-[#fc670c]">PLAN</span></a>
+            <nav class="hidden md:flex gap-6 text-[9px] font-black uppercase text-white/70">
+                <a href="services.html">Системы</a>
                 <a href="portfolio.html" class="text-white">Кейсы</a>
-                <a href="about.html" class="hover:text-[#fc670c]">О бюро</a>
-                <a href="contacts.html" class="hover:text-[#fc670c]">Контакты</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="py-24 bg-[#111827] text-white">
-            <div class="container mx-auto px-4">
-                <h1 class="text-5xl md:text-8xl leading-none tracking-tighter mb-8">Наши <br><span class="text-[#fc670c]">кейсы</span></h1>
-                <p class="text-xl text-slate-400 max-w-2xl font-medium">Сложнейшие инженерные задачи, решенные в 3D. Реализованные объекты в Москве и МО.</p>
-            </div>
-        </section>
-
-        <section class="py-32">
-            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-16">
-                <!-- Case 1 -->
-                <div class="group space-y-8">
-                    <div class="aspect-video bg-slate-100 rounded-[48px] overflow-hidden border border-slate-200">
-                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Моремания">
-                    </div>
-                    <div class="space-y-4">
-                        <div class="text-[10px] font-black uppercase tracking-widest text-[#fc670c]">Ресторан «Моремания»</div>
-                        <h2 class="text-3xl">Канализация в условиях стяжки 70мм</h2>
-                        <p class="text-slate-500">Спроектировали трассировку ВК в Revit с точностью до 1мм, что позволило соблюсти уклоны 2% без подъема пола. Сэкономлено 1.5 млн ₽ на бетонных работах.</p>
-                        <div class="flex gap-4">
-                            <span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-[9px] font-black uppercase tracking-widest">Раздел ВК</span>
-                            <span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-[9px] font-black uppercase tracking-widest">Revit 3D</span>
+    <main class="py-24">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl md:text-8xl font-black uppercase mb-16 text-center leading-none">Реализованные <br><span class="text-[#fc670c]">объекты</span></h1>
+            
+            <!-- Category: Restaurants -->
+            <div class="mb-32">
+                <h2 class="text-2xl font-black uppercase mb-10 border-l-4 border-[#fc670c] pl-6 tracking-widest">Рестораны и HoReCa</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="group cursor-pointer">
+                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
+                            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Моремания">
                         </div>
+                        <h3 class="text-xl font-black uppercase mb-2 text-[#111827]">Моремания (ТЦ Ботаника Молл)</h3>
+                        <p class="text-sm text-slate-500">Комплексный проект ОВ, ВК, ЭОМ в Revit. Решение проблемы малого уклона канализации.</p>
                     </div>
-                </div>
-
-                <!-- Case 2 -->
-                <div class="group space-y-8">
-                    <div class="aspect-video bg-slate-100 rounded-[48px] overflow-hidden border border-slate-200">
-                        <img src="https://images.unsplash.com/photo-1501339817302-3e26c4856855?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Кофемания">
-                    </div>
-                    <div class="space-y-4">
-                        <div class="text-[10px] font-black uppercase tracking-widest text-[#fc670c]">Кофемания (БЦ Саввинский)</div>
-                        <h2 class="text-3xl">Вентиляция с рекуперацией тепла</h2>
-                        <p class="text-slate-500">Интеграция систем ОВ в историческом здании с дефицитом выделенной мощности. Использование роторных рекуператоров снизило нагрузку на 40%.</p>
-                        <div class="flex gap-4">
-                            <span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-[9px] font-black uppercase tracking-widest">Раздел ОВ</span>
-                            <span class="px-4 py-2 bg-slate-50 border border-slate-100 rounded-full text-[9px] font-black uppercase tracking-widest">Энергоэффективность</span>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
+                            <img src="https://images.unsplash.com/photo-1501339817302-3e26c4856855?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Кофемания">
                         </div>
+                        <h3 class="text-xl font-black uppercase mb-2 text-[#111827]">Кофемания (Саввинская наб.)</h3>
+                        <p class="text-sm text-slate-500">Вентиляция с рекуперацией тепла в историческом здании. Экономия 40% лимитов мощности.</p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- CTA Quiz -->
-        <section id="quiz" class="py-32 bg-[#F9FAFB] border-t border-slate-100">
-            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-24 items-center">
-                <div class="space-y-8">
-                    <h2 class="text-4xl">Сделаем проект <br>под ваши задачи</h2>
-                    <p class="text-slate-500 text-xl font-medium">Бесплатная проверка ваших чертежей на ошибки (аудит) при заказе проекта в этом месяце.</p>
+            <!-- Category: Residential -->
+            <div class="mb-32">
+                <h2 class="text-2xl font-black uppercase mb-10 border-l-4 border-[#fc670c] pl-6 tracking-widest">Жилые объекты (Премиум)</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="group cursor-pointer">
+                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
+                            <img src="https://images.unsplash.com/photo-1600607687940-4e701330841b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Квартира">
+                        </div>
+                        <h3 class="text-xl font-black uppercase mb-2 text-[#111827]">Пентхаус в ЖК Кадашевский Пассаж</h3>
+                        <p class="text-sm text-slate-500">Проектирование увлажнения воздуха и системы "Умный дом" на 450 м².</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Дом">
+                        </div>
+                        <h3 class="text-xl font-black uppercase mb-2 text-[#111827]">Загородный дом (КП Новая Рига)</h3>
+                        <p class="text-sm text-slate-500">Проект ИТП и котельной 250 кВт. Интеграция солнечных коллекторов в Revit.</p>
+                    </div>
                 </div>
-                <div id="quiz-root"></div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="bg-[#111827] text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. Инженерное бюро №1 для HoReCa.</p>
-        </div>
+    <footer class="bg-[#111827] text-white py-12 text-center">
+        <div id="quiz-root" class="max-w-xl mx-auto mb-16"></div>
+        <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. Опыт, подтвержденный делами.</p>
     </footer>
-
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
