@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проектирование инженерных сетей офисов в Москве — Hot-Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        :root { --brand-orange: #fc670c; --brand-dark: #111827; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-[#111827] py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="font-black text-2xl text-white">HOT<span class="text-[#fc670c]">PLAN</span></a>
+            <nav class="hidden md:flex gap-6 text-[9px] font-black uppercase text-white/70">
+                <a href="services.html">Системы</a>
+                <a href="restorany.html">Рестораны</a>
+                <a href="ofisy.html" class="text-white">Офисы</a>
+                <a href="portfolio.html">Кейсы</a>
+                <a href="prices.html">Цены</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-24 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl md:text-7xl font-black uppercase mb-8">Инженерия для <br><span class="text-[#fc670c]">офисов</span></h1>
+                <p class="text-xl text-slate-500 max-w-2xl">Создаем комфортную среду для работы в БЦ классов А и В. Системы климат-контроля, СКС и серверные.</p>
+            </div>
+        </section>
+
+        <section class="py-32">
+            <div class="container mx-auto px-4 grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <i class="fas fa-desktop text-3xl text-[#fc670c]"></i>
+                    <h3 class="font-black uppercase">Микроклимат</h3>
+                    <p class="text-sm text-slate-500">Зональное управление температурой и контроль уровня CO2 для поддержания работоспособности сотрудников.</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-server text-3xl text-[#fc670c]"></i>
+                    <h3 class="font-black uppercase">Серверные</h3>
+                    <p class="text-sm text-slate-500">Проектирование прецизионного кондиционирования и бесперебойного питания (ИБП).</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-network-wired text-3xl text-[#fc670c]"></i>
+                    <h3 class="font-black uppercase">Слаботочные сети</h3>
+                    <p class="text-sm text-slate-500">Разработка СКС, Wi-Fi покрытия и систем контроля доступа (СКУД).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <div id="quiz-root"></div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>

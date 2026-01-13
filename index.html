@@ -6,82 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проектирование инженерных систем в Москве — HOTPLAN: Цена за м2, Revit 3D</title>
     <meta name="description" content="Инженерное бюро HOTPLAN: проектирование ОВ, ВК, ЭОМ в Revit. Экономия бюджета до 20%. Допуск СРО. 500+ объектов. ГИП Владислав Митин. Закажите проект по ГОСТ!">
-    <meta name="keywords" content="проектирование инженерных систем, проектирование вентиляции цена москва, проект отопления дома, проектирование вк и эом, проектирование в ревит, bim проектирование москва">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        :root {
-            --brand-orange: #fc670c;
-            --brand-dark: #111827;
-            --text-main: #374151;
-            --bg-light: #FFFFFF;
-            --bg-gray: #F9FAFB;
-        }
-        body { 
-            font-family: 'Inter', sans-serif;
-            color: var(--text-main);
-            background-color: var(--bg-light);
-            line-height: 1.6;
-        }
+        :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-main); background-color: #FFFFFF; line-height: 1.6; }
         .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -0.05em; }
-        .bg-grid {
-            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-        .cta-button {
-            background-color: var(--brand-orange);
-            color: #FFFFFF;
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #e65c0c;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(252, 103, 12, 0.2);
-        }
+        .bg-grid { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 40px 40px; }
+        .cta-button { background-color: var(--brand-orange); color: #FFFFFF; transition: all 0.3s ease; }
+        .cta-button:hover { background-color: #e65c0c; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(252, 103, 12, 0.2); }
         h1, h2, h3 { color: var(--brand-dark); font-weight: 800; text-transform: uppercase; tracking-tighter; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "react": "https://esm.sh/react@^19.2.3"
-      }
-    }
-    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
 </head>
 <body class="selection:bg-[#fc670c] selection:text-white">
-    <!-- Header -->
     <header class="sticky top-0 z-50 bg-[#111827] border-b border-white/5 py-4 backdrop-blur-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="logo-font text-3xl">
-                <span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span>
-            </a>
-            <nav class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-white/70">
-                <a href="services.html" class="hover:text-[#fc670c] transition-colors">Услуги</a>
-                <a href="portfolio.html" class="hover:text-[#fc670c] transition-colors">Кейсы</a>
-                <a href="about.html" class="hover:text-[#fc670c] transition-colors">О бюро</a>
-                <a href="contacts.html" class="hover:text-[#fc670c] transition-colors">Контакты</a>
+            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+            <nav class="hidden md:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
+                <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
+                <a href="restorany.html" class="hover:text-[#fc670c]">Для Ресторанов</a>
+                <a href="ofisy.html" class="hover:text-[#fc670c]">Для Офисов</a>
+                <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
+                <a href="prices.html" class="hover:text-[#fc670c]">Цены</a>
+                <a href="sro.html" class="hover:text-[#fc670c]">SRO</a>
             </nav>
             <div class="hidden lg:flex items-center gap-6">
-                <a href="tel:+74950000000" class="text-sm font-black text-white hover:text-[#fc670c] transition-colors">+7 (495) 000-00-00</a>
-                <a href="#quiz" class="cta-button px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest">КП за 30 мин</a>
+                <a href="tel:+74950000000" class="text-sm font-black text-white">+7 (495) 000-00-00</a>
+                <a href="#quiz" class="cta-button px-6 py-3 rounded-xl text-[10px] font-black uppercase">Расчет КП</a>
             </div>
-            <button class="md:hidden text-white text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#111827] p-8 border-t border-white/5">
-            <nav class="flex flex-col gap-6 text-xl font-black uppercase text-white">
-                <a href="services.html">Услуги</a>
-                <a href="portfolio.html">Кейсы</a>
-                <a href="about.html">О бюро</a>
-                <a href="contacts.html">Контакты</a>
-            </nav>
         </div>
     </header>
 
@@ -91,96 +53,41 @@
             <div class="absolute inset-0 opacity-10 bg-grid"></div>
             <div class="container mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-8">
-                    <div class="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-[#fc670c]">
-                        <span class="w-2 h-2 bg-[#fc670c] rounded-full animate-pulse"></span>
-                        BIM Проектирование в Revit
-                    </div>
-                    <h1 class="text-5xl md:text-8xl font-black leading-[0.9] text-white">
-                        Инженерные системы <br><span class="text-[#fc670c]">бизнес-класса</span>
-                    </h1>
-                    <p class="text-slate-400 text-xl font-medium max-w-xl">
-                        Разрабатываем сети ОВ, ВК и ЭОМ для ресторанов и офисов. Экономия бюджета до 20% за счет исключения коллизий на стадии 3D-модели.
-                    </p>
-                    <div class="flex flex-wrap gap-6">
-                        <a href="#quiz" class="cta-button px-10 py-5 rounded-2xl font-black uppercase text-xs tracking-widest">Получить расчет стоимости</a>
-                        <div class="flex items-center gap-4 text-white/50 text-[10px] font-black uppercase tracking-widest">
-                            <i class="fas fa-shield-alt text-[#fc670c] text-xl"></i>
-                            Допуск СРО П.035.77
-                        </div>
-                    </div>
+                    <h1 class="text-5xl md:text-8xl font-black leading-[0.9]">Инженерные системы <span class="text-[#fc670c]">Revit 3D</span></h1>
+                    <p class="text-slate-400 text-xl font-medium max-w-xl">Профессиональное проектирование ОВ, ВК и ЭОМ для бизнеса. Исключаем коллизии на этапе моделирования.</p>
+                    <div class="flex gap-4"><a href="#quiz" class="cta-button px-10 py-5 rounded-2xl font-black uppercase text-xs">Получить смету</a></div>
                 </div>
                 <div class="hidden lg:block relative">
-                    <div class="rounded-[80px] overflow-hidden shadow-2xl border-[20px] border-white/5 bg-slate-800 aspect-square">
-                        <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-60" alt="Инженерное проектирование">
-                    </div>
-                    <div class="absolute -bottom-10 -left-10 bg-[#fc670c] p-8 rounded-[40px] shadow-3xl">
-                        <div class="text-4xl font-black">500+</div>
-                        <div class="text-[10px] font-black uppercase tracking-widest">Объектов сдано</div>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800" class="rounded-[80px] border-[20px] border-white/5 opacity-60" alt="BIM">
                 </div>
             </div>
         </section>
 
-        <!-- Brief Services -->
-        <section class="py-32 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-                    <div class="max-w-2xl">
-                        <h2 class="text-4xl md:text-6xl mb-6">Комплексная инженерия</h2>
-                        <p class="text-lg text-slate-500 font-medium italic">«Мы не просто рисуем схемы, мы создаем цифровой двойник вашего здания». — Владислав Митин, ГИП.</p>
-                    </div>
-                    <a href="services.html" class="text-[#fc670c] font-black uppercase tracking-widest text-xs border-b-2 border-[#fc670c] pb-2 hover:gap-4 transition-all">Все услуги <i class="fas fa-arrow-right ml-2"></i></a>
+        <!-- BIM Advantage -->
+        <section class="py-24 bg-white bg-grid">
+            <div class="container mx-auto px-4 grid md:grid-cols-3 gap-12">
+                <div class="p-8 bg-slate-50 rounded-3xl">
+                    <h3 class="text-lg mb-4">0% Коллизий</h3>
+                    <p class="text-sm text-slate-500">BIM-модель позволяет увидеть пересечение труб и кабелей до начала монтажа.</p>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-xl transition-all">
-                        <i class="fas fa-wind text-3xl text-[#fc670c] mb-6"></i>
-                        <h3 class="text-xl mb-4">Вентиляция</h3>
-                        <p class="text-sm text-slate-500 mb-6">ОВ, ДУ, аспирация. Расчет по СП 60.13330.2020.</p>
-                    </div>
-                    <div class="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-xl transition-all">
-                        <i class="fas fa-fire-alt text-3xl text-[#fc670c] mb-6"></i>
-                        <h3 class="text-xl mb-4">Отопление</h3>
-                        <p class="text-sm text-slate-500 mb-6">ИТП, тепловые завесы, гидравлический расчет.</p>
-                    </div>
-                    <div class="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-xl transition-all">
-                        <i class="fas fa-tint text-3xl text-[#fc670c] mb-6"></i>
-                        <h3 class="text-xl mb-4">Водопровод</h3>
-                        <p class="text-sm text-slate-500 mb-6">ВК, жироуловители, баланс водопотребления.</p>
-                    </div>
-                    <div class="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-xl transition-all">
-                        <i class="fas fa-bolt text-3xl text-[#fc670c] mb-6"></i>
-                        <h3 class="text-xl mb-4">Электрика</h3>
-                        <p class="text-sm text-slate-500 mb-6">ЭОМ, расчет нагрузок, однолинейные схемы.</p>
-                    </div>
+                <div class="p-8 bg-slate-50 rounded-3xl">
+                    <h3 class="text-lg mb-4">-20% Бюджета</h3>
+                    <p class="text-sm text-slate-500">Точные спецификации из Revit исключают закупку лишних материалов.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl">
+                    <h3 class="text-lg mb-4">100% Согласование</h3>
+                    <p class="text-sm text-slate-500">Проекты по ГОСТ и СНиП проходят любую экспертизу и проверки ТЦ.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Trust Block -->
-        <section class="py-24 bg-[#111827] text-white">
-            <div class="container mx-auto px-4 flex flex-wrap justify-center gap-16 md:gap-32 grayscale opacity-50">
-                <div class="text-2xl font-black uppercase tracking-tighter italic">Moremania</div>
-                <div class="text-2xl font-black uppercase tracking-tighter italic">Kofemania</div>
-                <div class="text-2xl font-black uppercase tracking-tighter italic">Vkusvill</div>
-                <div class="text-2xl font-black uppercase tracking-tighter italic">Sberbank</div>
-            </div>
-        </section>
-
-        <!-- Quiz Mount -->
-        <section id="quiz" class="py-32 bg-[#F9FAFB] bg-grid">
+        <!-- Quiz -->
+        <section id="quiz" class="py-32 bg-[#F9FAFB]">
             <div class="container mx-auto px-4">
                 <div class="grid lg:grid-cols-2 gap-24 items-center">
                     <div class="space-y-8">
-                        <h2 class="text-4xl md:text-7xl">Узнайте стоимость <br><span class="text-[#fc670c]">за 30 минут</span></h2>
-                        <p class="text-slate-500 text-xl font-medium">Пройдите тест из 4 вопросов, чтобы получить детальную смету и пример проекта в Revit на ваш e-mail.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-4 font-black uppercase text-[10px] tracking-widest text-slate-400">
-                                <i class="fas fa-check text-green-500"></i> Точность расчета 95%
-                            </li>
-                            <li class="flex items-center gap-4 font-black uppercase text-[10px] tracking-widest text-slate-400">
-                                <i class="fas fa-check text-green-500"></i> Пример проекта в подарок
-                            </li>
-                        </ul>
+                        <h2 class="text-4xl md:text-7xl uppercase">Узнайте цену <br><span class="text-[#fc670c]">онлайн</span></h2>
+                        <p class="text-slate-500 text-xl">Пройдите тест из 3 вопросов и получите КП за 30 минут.</p>
                     </div>
                     <div id="quiz-root"></div>
                 </div>
@@ -188,40 +95,12 @@
         </section>
     </main>
 
-    <footer class="bg-[#111827] text-white pt-24 pb-12 border-t border-white/5">
-        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-16">
-            <div class="space-y-6">
-                <div class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span>PLAN</span></div>
-                <p class="text-slate-500 text-[10px] font-black uppercase tracking-widest leading-relaxed">Проектирование инженерных систем в Москве с 2012 года. BIM как стандарт.</p>
-            </div>
-            <div>
-                <h4 class="text-[#fc670c] text-[10px] font-black uppercase tracking-widest mb-8">Разделы</h4>
-                <nav class="flex flex-col gap-4 text-xs font-bold text-slate-400">
-                    <a href="services.html" class="hover:text-white transition-colors">Услуги</a>
-                    <a href="portfolio.html" class="hover:text-white transition-colors">Кейсы</a>
-                    <a href="about.html" class="hover:text-white transition-colors">О бюро</a>
-                </nav>
-            </div>
-            <div class="md:col-span-2">
-                <h4 class="text-[#fc670c] text-[10px] font-black uppercase tracking-widest mb-8">Контакты</h4>
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="space-y-2">
-                        <div class="text-[10px] text-slate-500 font-black uppercase">Офис</div>
-                        <div class="text-sm font-bold">Москва, Саввинская набережная, 15</div>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="text-[10px] text-slate-500 font-black uppercase">Телефон</div>
-                        <a href="tel:+74950000000" class="text-xl font-black block hover:text-[#fc670c]">+7 (495) 000-00-00</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mx-auto px-4 mt-20 pt-8 border-t border-white/5 text-[9px] font-black uppercase tracking-widest text-slate-600 flex justify-between">
-            <p>© 2024 HOTPLAN. Все права защищены.</p>
-            <p>СРО № П.035.77.1234</p>
+    <footer class="bg-[#111827] text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="logo-font text-3xl mb-8"><span class="text-[#fc670c]">HOT</span>PLAN</div>
+            <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. СРО № П.035.77.1234. Москва, Саввинская наб. 15</p>
         </div>
     </footer>
-
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
