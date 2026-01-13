@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги проектирования инженерных систем — ОВ, ВК, ЭОМ в Revit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-main); }
+        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; }
+        .bg-grid { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 40px 40px; }
+        h1, h2, h3 { color: var(--brand-dark); font-weight: 800; text-transform: uppercase; }
+        .cta-button { background-color: var(--brand-orange); color: #FFFFFF; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-[#111827] border-b border-white/5 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+            <nav class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/70">
+                <a href="services.html" class="text-white">Услуги</a>
+                <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
+                <a href="about.html" class="hover:text-[#fc670c]">О бюро</a>
+                <a href="contacts.html" class="hover:text-[#fc670c]">Контакты</a>
+            </nav>
+            <a href="tel:+74950000000" class="hidden lg:block text-sm font-black text-white">+7 (495) 000-00-00</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-24 bg-slate-50 bg-grid border-b border-slate-100">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl md:text-8xl mb-8 leading-none tracking-tighter">Наши <br><span class="text-[#fc670c]">компетенции</span></h1>
+                <p class="text-xl text-slate-500 max-w-2xl font-medium">Разработка проектной и рабочей документации (стадии П и Р) согласно Постановлению №87 РФ.</p>
+            </div>
+        </section>
+
+        <!-- Service Sections -->
+        <section class="py-32">
+            <div class="container mx-auto px-4 space-y-32">
+                <!-- Vent -->
+                <div class="grid lg:grid-cols-2 gap-20 items-start">
+                    <div class="space-y-8">
+                        <div class="w-20 h-20 bg-orange-50 rounded-3xl flex items-center justify-center text-[#fc670c] text-3xl">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h2 class="text-4xl">Вентиляция и Кондиционирование (ОВ)</h2>
+                        <p class="text-lg leading-relaxed">Проектирование систем приточно-вытяжной вентиляции, аспирации и противодымной защиты. Соблюдаем нормы СП 60.13330.2020 и СанПиН 2.1.3678-20.</p>
+                        <ul class="grid md:grid-cols-2 gap-4 text-xs font-black uppercase tracking-widest text-slate-400">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Аэродинамический расчет</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Подбор оборудования</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Акустический расчет</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Интеграция в BIM</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 rounded-[40px] aspect-video overflow-hidden border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale" alt="Проект вентиляции">
+                    </div>
+                </div>
+
+                <!-- Water -->
+                <div class="grid lg:grid-cols-2 gap-20 items-start">
+                    <div class="lg:order-2 space-y-8">
+                        <div class="w-20 h-20 bg-blue-50 rounded-3xl flex items-center justify-center text-blue-600 text-3xl">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h2 class="text-4xl">Водопровод и Канализация (ВК)</h2>
+                        <p class="text-lg leading-relaxed">Разработка внутренних систем ХВС, ГВС и водоотведения. Проектируем системы очистки жиросодержащих стоков для общепита.</p>
+                        <ul class="grid md:grid-cols-2 gap-4 text-xs font-black uppercase tracking-widest text-slate-400">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Баланс водопотребления</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Гидравлика трубопроводов</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Жироуловители</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Ливневые стоки (К2)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 rounded-[40px] aspect-video overflow-hidden border border-slate-200 lg:order-1">
+                         <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3fab35?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale" alt="Проект водоснабжения">
+                    </div>
+                </div>
+
+                <!-- Electric -->
+                <div class="grid lg:grid-cols-2 gap-20 items-start">
+                    <div class="space-y-8">
+                        <div class="w-20 h-20 bg-yellow-50 rounded-3xl flex items-center justify-center text-yellow-600 text-3xl">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h2 class="text-4xl">Электроснабжение (ЭОМ)</h2>
+                        <p class="text-lg leading-relaxed">Разработка разделов электроосвещения и силового оборудования. Обеспечение надежности 1-й и 2-й категории электроснабжения.</p>
+                        <ul class="grid md:grid-cols-2 gap-4 text-xs font-black uppercase tracking-widest text-slate-400">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Однолинейные схемы</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Расчет нагрузок</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Молниезащита</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Заземление</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-100 rounded-[40px] aspect-video overflow-hidden border border-slate-200">
+                         <img src="https://images.unsplash.com/photo-1454165833767-027ffea9e778?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale" alt="Проект электрики">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Quiz -->
+        <section id="quiz" class="py-32 bg-[#111827] text-white">
+            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-24 items-center">
+                <div class="space-y-8">
+                    <h2 class="text-4xl text-white">Получите КП на ваш объект</h2>
+                    <p class="text-slate-400 text-xl font-medium">Бесплатная консультация ГИПа и расчет стоимости проектирования за 30 минут.</p>
+                </div>
+                <div id="quiz-root"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#111827] text-white py-12 border-t border-white/5">
+        <div class="container mx-auto px-4 text-center">
+            <div class="logo-font text-2xl mb-6"><span class="text-[#fc670c]">HOT</span><span>PLAN</span></div>
+            <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. СРО № П.035.77.1234</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>

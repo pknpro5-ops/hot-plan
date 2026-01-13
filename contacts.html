@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты бюро HOTPLAN — Офис в Москве, Телефон</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-main); }
+        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; }
+        h1, h2, h3 { color: var(--brand-dark); font-weight: 800; text-transform: uppercase; }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-[#111827] border-b border-white/5 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+            <nav class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/70">
+                <a href="services.html" class="hover:text-[#fc670c]">Услуги</a>
+                <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
+                <a href="about.html" class="hover:text-[#fc670c]">О бюро</a>
+                <a href="contacts.html" class="text-white">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-24 bg-slate-50 border-b border-slate-100">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl md:text-8xl leading-none tracking-tighter mb-8">На связи <br><span class="text-[#fc670c]">24/7</span></h1>
+                <p class="text-xl text-slate-500 max-w-2xl font-medium">Наш офис открыт для обсуждения ваших проектов в будние дни с 10:00 до 19:00.</p>
+            </div>
+        </section>
+
+        <section class="py-32">
+            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-20">
+                <div class="space-y-16">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="space-y-4">
+                            <div class="text-[10px] font-black uppercase tracking-widest text-slate-400">Офис</div>
+                            <address class="not-italic text-2xl font-black text-[#111827] leading-tight">
+                                Москва, Саввинская наб., 15, <br>офис 402
+                            </address>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-[10px] font-black uppercase tracking-widest text-slate-400">Телефон</div>
+                            <a href="tel:+74950000000" class="text-2xl font-black text-[#111827] hover:text-[#fc670c] transition-colors">
+                                +7 (495) 000-00-00
+                            </a>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-[10px] font-black uppercase tracking-widest text-slate-400">Email</div>
+                            <a href="mailto:info@hot-plan.ru" class="text-2xl font-black text-[#111827] hover:text-[#fc670c] transition-colors">
+                                info@hot-plan.ru
+                            </a>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-[10px] font-black uppercase tracking-widest text-slate-400">WhatsApp / TG</div>
+                            <div class="text-2xl font-black text-[#111827]">
+                                +7 (900) 000-00-00
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div class="bg-slate-100 rounded-[48px] overflow-hidden aspect-video border border-slate-200 grayscale hover:grayscale-0 transition-all duration-700">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.51680199103!2d37.56148387711466!3d55.732155073076864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bc3e34b9d55%3A0xf6398031e405a415!2z0KHQsNCy0LLQuNC90YHQutCw0Y8g0L3QsNCxLiwgMTUsINCc0L7RgdC60LLQsCwgMTI0MDQ4!5e0!3m2!1sru!2sru!4v1711234567890!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h2 class="text-4xl uppercase">Отправить техзадание</h2>
+                    <p class="text-slate-500 font-medium">Если у вас есть готовое ТЗ или архитектурные планы — прикрепите их к форме или отправьте на почту.</p>
+                    <div id="quiz-root"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#111827] text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. Инженерное бюро ООО "ХОТПЛАН".</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
