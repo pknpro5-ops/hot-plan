@@ -49,7 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children, navigateTo }) => {
 
           <div className="hidden lg:flex items-center gap-8">
             <div className="flex flex-col items-end">
-               <a href="tel:+74950000000" className="text-sm font-black text-[#111827] hover:text-[#fc670c] transition-colors tracking-tight">+7 (495) 000-00-00</a>
+               <a href="tel:+74999386615" className="text-sm font-black text-[#111827] hover:text-[#fc670c] transition-colors tracking-tight">+7 (499) 938-66-15</a>
                <div className="text-[8px] text-green-600 font-black uppercase tracking-widest flex items-center gap-1">
                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span> Сейчас работаем
                </div>
@@ -75,7 +75,7 @@ const Layout: React.FC<LayoutProps> = ({ children, navigateTo }) => {
             <a href="#" onClick={(e) => handleNav(e, 'about')} className="text-3xl font-black uppercase tracking-tighter text-[#111827]">О бюро</a>
             <a href="#" onClick={(e) => handleNav(e, 'contacts')} className="text-3xl font-black uppercase tracking-tighter text-[#111827]">Контакты</a>
             <div className="mt-auto pt-8 border-t border-slate-100">
-               <a href="tel:+74950000000" className="text-2xl font-black block mb-4 text-[#111827]">+7 (495) 000-00-00</a>
+               <a href="tel:+74999386615" className="text-2xl font-black block mb-4 text-[#111827]">+7 (499) 938-66-15</a>
                <button onClick={(e) => { handleNav(e, 'home'); setTimeout(() => document.getElementById('quiz')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="w-full bg-[#fc670c] text-white py-5 rounded-2xl font-black uppercase tracking-widest shadow-xl">Получить расчет</button>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Layout: React.FC<LayoutProps> = ({ children, navigateTo }) => {
             <h4 className="font-black text-[10px] uppercase tracking-[0.3em] mb-10 text-[#fc670c]">Контакты</h4>
             <address className="space-y-6 text-slate-400 text-[10px] font-black uppercase tracking-widest not-italic">
               <div className="flex items-start gap-3"><i className="fas fa-map-marker-alt text-[#fc670c] mt-1"></i><span>Москва, Саввинская наб. 15, офис 402</span></div>
-              <div className="flex items-center gap-3"><i className="fas fa-phone text-[#fc670c]"></i><a href="tel:+74950000000" className="hover:text-white transition-colors text-base font-black">+7 (495) 000-00-00</a></div>
+              <div className="flex items-center gap-3"><i className="fas fa-phone text-[#fc670c]"></i><a href="tel:+74999386615" className="hover:text-white transition-colors text-base font-black">+7 (499) 938-66-15</a></div>
               <div className="flex items-center gap-3 text-green-500 font-bold"><i className="fas fa-shield-alt"></i><span>Допуск СРО № П.035.77.1234</span></div>
             </address>
           </div>
