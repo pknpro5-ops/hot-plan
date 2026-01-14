@@ -44,7 +44,8 @@
             <div class="hidden lg:flex items-center gap-6">
                 <a href="tel:+74999386615" class="text-sm font-black text-white">+7 (499) 938-66-15</a>
                 <a href="#quiz" class="cta-button px-6 py-3 text-[10px] font-black uppercase">КП за 30 мин</a>
-            </div>
+               <button id="open-modal-btn" class="cta-button px-6 py-3 text-[10px] font-black uppercase">Оставить заявку</button>
+           </div>
         </div>
     </header>
 
@@ -196,6 +197,51 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Structure -->
+    <div id="phone-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md mx-4 relative">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            <h3 class="text-2xl font-bold mb-6 text-[#111827]">Оставить заявку</h3>
+            <p class="text-gray-600 mb-6">Введите ваш номер телефона, и мы свяжемся с вами в ближайшее время.</p>
+            <form id="phone-form">
+                <input type="tel" id="phone-input" class="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-[#fc670c]" placeholder="+7 (XXX) XXX-XX-XX" required>
+                <button type="submit" class="cta-button w-full py-3 text-sm font-black uppercase">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const openModalBtn = document.getElementById('open-modal-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const phoneModal = document.getElementById('phone-modal');
+        const phoneForm = document.getElementById('phone-form');
+        const phoneInput = document.getElementById('phone-input');
+
+        openModalBtn.addEventListener('click', () => {
+            phoneModal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            phoneModal.classList.add('hidden');
+        });
+
+        phoneModal.addEventListener('click', (e) => {
+            if (e.target === phoneModal) {
+                phoneModal.classList.add('hidden');
+            }
+        });
+
+        phoneForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const phoneNumber = phoneInput.value;
+            // Here you would typically send the phone number to a server
+            console.log('Номер телефона:', phoneNumber);
+            alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+            phoneModal.classList.add('hidden');
+            phoneForm.reset();
+        });
+    </script>
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
