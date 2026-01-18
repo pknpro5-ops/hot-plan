@@ -9,36 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
-        body { font-family: 'Inter', sans-serif; color: var(--text-main); background-color: #FFFFFF; line-height: 1.6; }
-        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -0.05em; }
-        .cta-button { background-color: var(--brand-orange); color: #FFFFFF; transition: all 0.3s ease; border-radius: 12px; }
-        .cta-button:hover { background-color: #e65c0c; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(252, 103, 12, 0.2); }
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(4px); }
-        .modal.active { display: flex; align-items: center; justify-content: center; }
-        .modal-content { background-color: #FFFFFF; margin: auto; padding: 0; border-radius: 24px; max-width: 900px; width: 90%; max-height: 90vh; overflow-y: auto; position: relative; animation: modalFadeIn 0.3s ease; }
-        @keyframes modalFadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
-        .modal-close { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 32px; font-weight: bold; cursor: pointer; z-index: 1001; background: rgba(0, 0, 0, 0.5); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
-        .modal-close:hover { background: rgba(0, 0, 0, 0.8); transform: rotate(90deg); }
+        :root { --brand-orange: #fc670c; --brand-dark: #111827; }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-white">
-    <header class="sticky top-0 z-50 bg-[#111827] border-b border-white/5 py-4 backdrop-blur-lg">
+    <header class="bg-[#111827] py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
-            <nav class="hidden xl:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
-                <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
-                <a href="restorany.html" class="hover:text-[#fc670c]">Рестораны</a>
-                <a href="ofisy.html" class="hover:text-[#fc670c]">Офисы</a>
-                <a href="kvartiry.html" class="hover:text-[#fc670c]">Квартиры</a>
-                <a href="portfolio.html" class="text-white hover:text-[#fc670c]">Кейсы</a>
-                <a href="prices.html" class="hover:text-[#fc670c]">Цены</a>
-                <a href="sro.html" class="hover:text-[#fc670c]">СРО</a>
+            <a href="index.html" class="font-black text-2xl text-white">HOT<span class="text-[#fc670c]">PLAN</span></a>
+            <nav class="hidden md:flex gap-6 text-[9px] font-black uppercase text-white/70">
+                <a href="services.html">Системы</a>
+                <a href="portfolio.html" class="text-white">Кейсы</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
             </nav>
-            <div class="hidden lg:flex items-center gap-6">
-                <a href="tel:+74999386615" class="text-sm font-black text-white">+7 (499) 938-66-15</a>
-                <a href="#quiz" class="cta-button px-6 py-3 text-[10px] font-black uppercase">КП за 30 мин</a>
-            </div>
         </div>
     </header>
 
@@ -50,22 +34,14 @@
             <div class="mb-32">
                 <h2 class="text-2xl font-black uppercase mb-10 border-l-4 border-[#fc670c] pl-6 tracking-widest">Рестораны и HoReCa</h2>
                 <div class="grid md:grid-cols-2 gap-12">
-                    <div class="group cursor-pointer portfolio-item" 
-                         data-title="Моремания (ТЦ Ботаника Молл)"
-                         data-image="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=1200"
-                         data-description="Комплексный проект ОВ, ВК, ЭОМ в Revit. Решение проблемы малого уклона канализации. Разработана система приточно-вытяжной вентиляции с учетом специфики ресторанного зала. Спроектирована система водоотведения с жироуловителями для согласования с Мосводоканалом. Электрика рассчитана с учетом всех технологических нагрузок кухонного оборудования."
-                         onclick="openModal(this)">
+                    <div class="group cursor-pointer">
                         <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
                             <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Моремания">
                         </div>
                         <h3 class="text-xl font-black uppercase mb-2 text-[#111827]">Моремания (ТЦ Ботаника Молл)</h3>
                         <p class="text-sm text-slate-500">Комплексный проект ОВ, ВК, ЭОМ в Revit. Решение проблемы малого уклона канализации.</p>
                     </div>
-                    <div class="group cursor-pointer portfolio-item"
-                         data-title="Кофемания (Саввинская наб.)"
-                         data-image="https://images.unsplash.com/photo-1501339817302-3e26c4856855?auto=format&fit=crop&q=80&w=1200"
-                         data-description="Вентиляция с рекуперацией тепла в историческом здании. Экономия 40% лимитов мощности. Проект выполнен с учетом требований к историческим зданиям. Установлена система рекуперации, которая позволила значительно снизить энергопотребление. Все коммуникации спроектированы с минимальным вмешательством в архитектуру здания."
-                         onclick="openModal(this)">
+                    <div class="group cursor-pointer">
                         <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
                             <img src="https://images.unsplash.com/photo-1501339817302-3e26c4856855?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Кофемания">
                         </div>
@@ -79,22 +55,14 @@
             <div class="mb-32">
                 <h2 class="text-2xl font-black uppercase mb-10 border-l-4 border-[#fc670c] pl-6 tracking-widest">Жилые объекты (Премиум)</h2>
                 <div class="grid md:grid-cols-2 gap-12">
-                    <div class="group cursor-pointer portfolio-item"
-                         data-title="Пентхаус в ЖК Кадашевский Пассаж"
-                         data-image="https://images.unsplash.com/photo-1600607687940-4e701330841b?auto=format&fit=crop&q=80&w=1200"
-                         data-description="Проектирование увлажнения воздуха и системы 'Умный дом' на 450 м². Премиум-объект с комплексной автоматизацией всех инженерных систем. Спроектирована система климат-контроля с поддержанием оптимальной влажности воздуха. Интегрирована система 'Умный дом' для управления освещением, климатом и безопасностью. Все системы работают через единый интерфейс управления."
-                         onclick="openModal(this)">
+                    <div class="group cursor-pointer">
                         <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
                             <img src="https://images.unsplash.com/photo-1600607687940-4e701330841b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Квартира">
                         </div>
                         <h3 class="text-xl font-black uppercase mb-2 text-[#111827]">Пентхаус в ЖК Кадашевский Пассаж</h3>
                         <p class="text-sm text-slate-500">Проектирование увлажнения воздуха и системы "Умный дом" на 450 м².</p>
                     </div>
-                    <div class="group cursor-pointer portfolio-item"
-                         data-title="Загородный дом (КП Новая Рига)"
-                         data-image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200"
-                         data-description="Проект ИТП и котельной 250 кВт. Интеграция солнечных коллекторов в Revit. Современный энергоэффективный дом с автономными системами жизнеобеспечения. Спроектирована котельная с возможностью работы на разных видах топлива. Интегрирована система солнечных коллекторов для подогрева воды. Все системы спроектированы в единой BIM-модели для исключения коллизий."
-                         onclick="openModal(this)">
+                    <div class="group cursor-pointer">
                         <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
                             <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Дом">
                         </div>
@@ -106,99 +74,10 @@
         </div>
     </main>
 
-    <footer class="bg-[#111827] text-white pt-24 pb-12 border-t border-white/5">
-        <div class="container mx-auto px-4">
-            <div id="quiz-root" class="max-w-xl mx-auto mb-16"></div>
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div>
-                    <div class="logo-font text-3xl mb-6"><span class="text-[#fc670c]">HOT</span>PLAN</div>
-                    <p class="text-xs text-slate-400">Проектирование инженерных систем в Москве</p>
-                </div>
-                <div>
-                    <h4 class="text-sm font-black uppercase mb-4 tracking-widest text-[#fc670c]">Услуги</h4>
-                    <ul class="space-y-2 text-xs text-slate-400">
-                        <li><a href="services.html" class="hover:text-white transition-colors">Системы</a></li>
-                        <li><a href="restorany.html" class="hover:text-white transition-colors">Рестораны</a></li>
-                        <li><a href="ofisy.html" class="hover:text-white transition-colors">Офисы</a></li>
-                        <li><a href="kvartiry.html" class="hover:text-white transition-colors">Квартиры</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-black uppercase mb-4 tracking-widest text-[#fc670c]">Информация</h4>
-                    <ul class="space-y-2 text-xs text-slate-400">
-                        <li><a href="portfolio.html" class="hover:text-white transition-colors">Кейсы</a></li>
-                        <li><a href="prices.html" class="hover:text-white transition-colors">Цены</a></li>
-                        <li><a href="sro.html" class="hover:text-white transition-colors">СРО</a></li>
-                        <li><a href="about.html" class="hover:text-white transition-colors">О бюро</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-black uppercase mb-4 tracking-widest text-[#fc670c]">Контакты</h4>
-                    <ul class="space-y-2 text-xs text-slate-400">
-                        <li><a href="contacts.html" class="hover:text-white transition-colors">Контакты</a></li>
-                        <li><a href="tel:+74999386615" class="hover:text-white transition-colors">+7 (499) 938-66-15</a></li>
-                        <li><a href="mailto:info@hot-plan.ru" class="hover:text-white transition-colors">info@hot-plan.ru</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-white/5 pt-8 text-center">
-                <p class="text-[9px] font-black uppercase tracking-[0.4em] text-slate-600">© 2024 HOTPLAN. СРО № П.035.77.1234. Москва, Саввинская наб. 15</p>
-            </div>
-        </div>
+    <footer class="bg-[#111827] text-white py-12 text-center">
+        <div id="quiz-root" class="max-w-xl mx-auto mb-16"></div>
+        <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. Опыт, подтвержденный делами.</p>
     </footer>
-
-    <!-- Modal -->
-    <div id="portfolioModal" class="modal" onclick="closeModalOnBackdrop(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="modal-close" onclick="closeModal()">&times;</span>
-            <div class="relative">
-                <img id="modalImage" src="" alt="" class="w-full h-64 md:h-96 object-cover rounded-t-[24px]">
-            </div>
-            <div class="p-8 md:p-12">
-                <h2 id="modalTitle" class="text-3xl md:text-4xl font-black uppercase mb-6 text-[#111827]"></h2>
-                <p id="modalDescription" class="text-lg text-slate-600 leading-relaxed mb-8"></p>
-                <a href="#quiz" onclick="closeModal()" class="cta-button inline-block px-10 py-5 font-black uppercase text-sm text-center">
-                    <i class="fas fa-paper-plane mr-2"></i>Оставить заявку на проект
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function openModal(element) {
-            const modal = document.getElementById('portfolioModal');
-            const title = document.getElementById('modalTitle');
-            const image = document.getElementById('modalImage');
-            const description = document.getElementById('modalDescription');
-            
-            title.textContent = element.getAttribute('data-title');
-            image.src = element.getAttribute('data-image');
-            image.alt = element.getAttribute('data-title');
-            description.textContent = element.getAttribute('data-description');
-            
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('portfolioModal');
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        function closeModalOnBackdrop(event) {
-            if (event.target.id === 'portfolioModal') {
-                closeModal();
-            }
-        }
-
-        // Закрытие по Escape
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-    </script>
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
