@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проектирование инженерных систем под ключ в Москве: цены, СРО | Hot-Plan</title>
     <meta name="description" content="Комплексное проектирование ОВ, ВК, ЭОМ в Revit. Экономия 20% на монтаже. 500+ объектов. ГИП Владислав Митин. Допуск СРО. Закажите проект по ГОСТ!">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=75&w=1200&fm=webp">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        /* Fallback font metrics to reduce CLS */
+        @font-face {
+          font-family: 'Inter Fallback';
+          src: local('Arial');
+          ascent-override: 92.77%;
+          descent-override: 24.41%;
+          line-gap-override: 0.00%;
+          size-adjust: 107.80%;
+        }
         :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
-        body { font-family: 'Inter', sans-serif; color: var(--text-main); background-color: #FFFFFF; line-height: 1.6; }
-        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; letter-spacing: -0.05em; }
+        body { font-family: 'Inter', 'Inter Fallback', sans-serif; color: var(--text-main); background-color: #FFFFFF; line-height: 1.6; }
+        .logo-font { font-family: 'Inter', 'Inter Fallback', sans-serif; font-weight: 900; letter-spacing: -0.05em; }
         .bg-grid { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 40px 40px; }
         .cta-button { background-color: var(--brand-orange); color: #FFFFFF; transition: all 0.3s ease; border-radius: 12px; }
         .cta-button:hover { background-color: #e65c0c; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(252, 103, 12, 0.2); }
         h1, h2, h3 { color: var(--brand-dark); font-weight: 800; text-transform: uppercase; tracking-tighter; }
+        .hero-h1 { text-shadow: 0 3px 10px rgba(0,0,0,0.7); }
     </style>
 <script type="importmap">
 {
@@ -32,7 +55,7 @@
     <header class="sticky top-0 z-50 bg-[#111827] border-b border-white/5 py-4 backdrop-blur-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
-            <nav class="hidden xl:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
+            <nav role="navigation" aria-label="Основная навигация сайта" class="hidden xl:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
                 <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
                 <a href="restorany.html" class="hover:text-[#fc670c]">Рестораны</a>
                 <a href="ofisy.html" class="hover:text-[#fc670c]">Офисы</a>
@@ -50,7 +73,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="bg-[#111827] text-white py-24 md:py-40 relative overflow-hidden">
+        <section class="bg-[#111827] text-white py-24 md:py-40 relative overflow-hidden" aria-label="Комплексное проектирование инженерных систем">
             <div class="absolute inset-0 opacity-10 bg-grid"></div>
             <div class="container mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-8">
@@ -58,45 +81,45 @@
                         <span class="w-2 h-2 bg-[#fc670c] rounded-full animate-pulse"></span>
                         BIM Проектирование в Revit
                     </div>
-                    <h1 class="text-5xl md:text-7xl font-black leading-[0.9]">Комплексное проектирование <span class="text-[#fc670c]">инженерных систем</span> в Москве</h1>
+                    <h1 class="text-5xl md:text-7xl font-black leading-[0.9] hero-h1 text-white">Комплексное проектирование <span class="text-[#fc670c]">инженерных систем</span> в Москве</h1>
                     <p class="text-slate-400 text-xl font-medium max-w-xl">Разработка разделов ОВ, ВК, ЭОМ с гарантией отсутствия коллизий. Экономия до 20% бюджета на этапе монтажа.</p>
                     <div class="flex flex-wrap gap-6">
                         <a href="#quiz" class="cta-button px-10 py-5 font-black uppercase text-xs">Рассчитать стоимость</a>
                         <div class="flex items-center gap-4 text-white/50 text-[10px] font-black uppercase tracking-widest">
-                            <i class="fas fa-shield-alt text-[#fc670c] text-xl"></i>
+                            <i class="fas fa-shield-alt text-[#fc670c] text-xl" aria-hidden="true"></i>
                             Допуск СРО П.035.77
                         </div>
                     </div>
                 </div>
                 <div class="hidden lg:block relative">
                     <div class="aspect-square bg-slate-800 rounded-[80px] border-[20px] border-white/5 overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-[5s]" alt="BIM Проектирование">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=75&w=1200&fm=webp" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-[5s]" alt="BIM Проектирование инженером в Revit" width="1200" height="1200">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Advantages Block -->
-        <section class="py-32 bg-white">
+        <section class="py-32 bg-white" aria-label="Наши преимущества">
             <div class="container mx-auto px-4">
                 <div class="grid md:grid-cols-3 gap-12">
                     <div class="p-10 bg-slate-50 rounded-[40px] border border-slate-100">
                         <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
-                            <i class="fas fa-cube text-[#fc670c] text-2xl"></i>
+                            <i class="fas fa-cube text-[#fc670c] text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl mb-4 text-[#111827]">Revit 3D Моделирование</h3>
                         <p class="text-sm text-slate-500">Визуализация всех сетей до начала стройки. Исключаем пересечения труб и кабелей на 100%.</p>
                     </div>
                     <div class="p-10 bg-slate-50 rounded-[40px] border border-slate-100">
                         <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
-                            <i class="fas fa-file-invoice-dollar text-[#fc670c] text-2xl"></i>
+                            <i class="fas fa-file-invoice-dollar text-[#fc670c] text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl mb-4 text-[#111827]">Точные спецификации</h3>
                         <p class="text-sm text-slate-500">Автоматический расчет материалов в Revit исключает закупку лишнего оборудования. Экономия 20% бюджета.</p>
                     </div>
                     <div class="p-10 bg-slate-50 rounded-[40px] border border-slate-100">
                         <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
-                            <i class="fas fa-user-tie text-[#fc670c] text-2xl"></i>
+                            <i class="fas fa-user-tie text-[#fc670c] text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="text-xl mb-4 text-[#111827]">ГИП с опытом 12 лет</h3>
                         <p class="text-sm text-slate-500">Владислав Митин лично курирует каждый проект. 500+ реализованных объектов в Москве.</p>
@@ -106,11 +129,12 @@
         </section>
 
         <!-- Pricing Summary -->
-        <section id="prices" class="py-32 bg-[#F9FAFB]">
+        <section id="prices" class="py-32 bg-[#F9FAFB]" aria-label="Стоимость проектирования">
             <div class="container mx-auto px-4 max-w-5xl">
                 <h2 class="text-4xl md:text-5xl text-center mb-20 uppercase tracking-tighter">Стоимость проектирования <span class="text-[#fc670c]">за м²</span></h2>
                 <div class="bg-white rounded-[48px] shadow-2xl overflow-hidden border border-slate-100">
                     <table class="w-full text-left text-xs font-black uppercase tracking-widest">
+                        <caption class="sr-only">Таблица цен на проектирование инженерных систем</caption>
                         <thead class="bg-[#111827] text-white">
                             <tr>
                                 <th class="px-10 py-8">Система</th>
@@ -144,7 +168,7 @@
         </section>
 
         <!-- Quiz Mount -->
-        <section id="quiz" class="py-32 bg-[#111827]">
+        <section id="quiz" class="py-32 bg-[#111827]" aria-label="Расчет стоимости проекта">
             <div class="container mx-auto px-4">
                 <div class="grid lg:grid-cols-2 gap-24 items-center">
                     <div class="text-white space-y-8">
@@ -157,10 +181,42 @@
         </section>
     </main>
 
-    <footer class="bg-[#111827] text-white pt-24 pb-12 border-t border-white/5">
-        <div class="container mx-auto px-4 text-center">
-            <div class="logo-font text-3xl mb-12"><span class="text-[#fc670c]">HOT</span>PLAN</div>
-            <p class="text-[9px] font-black uppercase tracking-[0.4em] text-slate-600">© 2024 HOTPLAN. СРО № П.035.77.1234. Москва, Саввинская наб. 15</p>
+    <footer class="bg-[#111827] text-white pt-24 pb-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+            <div>
+                <a href="index.html" class="logo-font text-3xl mb-6 block"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+                <p class="text-slate-400 text-xs">Проектируем инженерные сети для бизнеса и частных лиц в Москве с 2012 года. BIM-моделирование как стандарт качества.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Навигация</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="services.html" class="hover:text-white">Системы</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white">Кейсы</a></li>
+                    <li><a href="prices.html" class="hover:text-white">Цены</a></li>
+                    <li><a href="about.html" class="hover:text-white">О бюро</a></li>
+                    <li><a href="sro.html" class="hover:text-white">СРО</a></li>
+                    <li><a href="contacts.html" class="hover:text-white">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Объекты</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="restorany.html" class="hover:text-white">Рестораны</a></li>
+                    <li><a href="ofisy.html" class="hover:text-white">Офисы</a></li>
+                    <li><a href="kvartiry.html" class="hover:text-white">Квартиры и дома</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Контакты</h4>
+                <address class="not-italic space-y-4 text-sm text-slate-300">
+                    <p><i class="fas fa-map-marker-alt text-[#fc670c] mr-3" aria-hidden="true"></i>Москва, Саввинская наб. 15</p>
+                    <p><i class="fas fa-phone text-[#fc670c] mr-3" aria-hidden="true"></i><a href="tel:+74950000000" class="hover:text-white">+7 (495) 000-00-00</a></p>
+                    <p><i class="fas fa-envelope text-[#fc670c] mr-3" aria-hidden="true"></i><a href="mailto:info@hot-plan.ru" class="hover:text-white">info@hot-plan.ru</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-xs text-slate-500">
+            <p>© 2024 HOTPLAN. Все права защищены. <a href="#" class="hover:text-white">Политика конфиденциальности</a>.</p>
         </div>
     </footer>
     <script type="module" src="./index.tsx"></script>

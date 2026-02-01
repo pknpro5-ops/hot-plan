@@ -5,32 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О бюро HOTPLAN — Владислав Митин, BIM-проектирование</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        /* Fallback font metrics to reduce CLS */
+        @font-face {
+          font-family: 'Inter Fallback';
+          src: local('Arial');
+          ascent-override: 92.77%;
+          descent-override: 24.41%;
+          line-gap-override: 0.00%;
+          size-adjust: 107.80%;
+        }
         :root { --brand-orange: #fc670c; --brand-dark: #111827; --text-main: #374151; }
-        body { font-family: 'Inter', sans-serif; color: var(--text-main); }
-        .logo-font { font-family: 'Inter', sans-serif; font-weight: 900; }
+        body { font-family: 'Inter', 'Inter Fallback', sans-serif; color: var(--text-main); }
+        .logo-font { font-family: 'Inter', 'Inter Fallback', sans-serif; font-weight: 900; }
         h1, h2, h3 { color: var(--brand-dark); font-weight: 800; text-transform: uppercase; }
         .bg-grid { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 40px 40px; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://pknpro5-ops.github.io/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "О бюро"
+      }]
+    }
+    </script>
 </head>
 <body class="bg-white">
-    <header class="bg-[#111827] border-b border-white/5 py-4">
+    <header class="sticky top-0 z-50 bg-[#111827] border-b border-white/5 py-4 backdrop-blur-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
-            <nav class="hidden md:flex gap-8 text-[10px] font-black uppercase tracking-widest text-white/70">
-                <a href="services.html" class="hover:text-[#fc670c]">Услуги</a>
+            <nav role="navigation" aria-label="Основная навигация сайта" class="hidden xl:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
+                <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
+                <a href="restorany.html" class="hover:text-[#fc670c]">Рестораны</a>
+                <a href="ofisy.html" class="hover:text-[#fc670c]">Офисы</a>
+                <a href="kvartiry.html" class="hover:text-[#fc670c]">Квартиры</a>
                 <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
-                <a href="about.html" class="text-white">О бюро</a>
-                <a href="contacts.html" class="hover:text-[#fc670c]">Контакты</a>
+                <a href="prices.html" class="hover:text-[#fc670c]">Цены</a>
+                <a href="sro.html" class="hover:text-[#fc670c]">СРО</a>
             </nav>
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="tel:+74950000000" class="text-sm font-black text-white">+7 (495) 000-00-00</a>
+                <a href="#quiz" class="cta-button px-6 py-3 text-[10px] font-black uppercase rounded-lg">КП за 30 мин</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="py-24 bg-white bg-grid">
+        <section class="py-24 bg-white bg-grid" aria-label="О бюро HOTPLAN">
             <div class="container mx-auto px-4 flex flex-col md:flex-row gap-20 items-center">
                 <div class="md:w-1/2 space-y-10">
                     <h1 class="text-5xl md:text-8xl leading-none tracking-tighter">Бюро <br><span class="text-[#fc670c]">HOTPLAN</span></h1>
@@ -42,24 +86,24 @@
                 </div>
                 <div class="md:w-1/2">
                     <div class="bg-slate-100 rounded-[60px] aspect-[3/4] overflow-hidden border-8 border-slate-50 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover grayscale" alt="ГИП Владислав Митин">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=75&w=800&fm=webp" class="w-full h-full object-cover grayscale" alt="ГИП Владислав Митин" loading="lazy" width="800" height="1067">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SRO Section -->
-        <section class="py-32 bg-[#111827] text-white">
+        <section class="py-32 bg-[#111827] text-white" aria-label="Допуски и Гарантии">
             <div class="container mx-auto px-4 max-w-4xl text-center space-y-12">
                 <h2 class="text-4xl text-white">Допуски и Гарантии</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="p-10 bg-white/5 border border-white/10 rounded-[40px] space-y-4">
-                        <i class="fas fa-shield-alt text-[#fc670c] text-4xl mb-4"></i>
+                        <i class="fas fa-shield-alt text-[#fc670c] text-4xl mb-4" aria-hidden="true"></i>
                         <h3 class="text-xl text-white">СРО Проектировщиков</h3>
                         <p class="text-slate-500 text-sm">Свидетельство № П.035.77.1234. Работаем в соответствии с ГК РФ.</p>
                     </div>
                     <div class="p-10 bg-white/5 border border-white/10 rounded-[40px] space-y-4">
-                        <i class="fas fa-certificate text-[#fc670c] text-4xl mb-4"></i>
+                        <i class="fas fa-certificate text-[#fc670c] text-4xl mb-4" aria-hidden="true"></i>
                         <h3 class="text-xl text-white">Страхование</h3>
                         <p class="text-slate-500 text-sm">Профессиональная ответственность застрахована на 10 000 000 ₽.</p>
                     </div>
@@ -68,36 +112,36 @@
         </section>
 
         <!-- Stages -->
-        <section class="py-32 bg-white">
+        <section class="py-32 bg-white" aria-label="Этапы работы">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl text-center mb-24">Этапы работы</h2>
                 <div class="grid md:grid-cols-5 gap-8">
                     <div class="text-center space-y-4">
                         <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto text-xl font-black text-[#fc670c]">01</div>
-                        <h4 class="font-black uppercase text-[10px] tracking-widest">Аудит и ТЗ</h4>
+                        <h3 class="font-black uppercase text-[10px] tracking-widest">Аудит и ТЗ</h3>
                     </div>
                     <div class="text-center space-y-4">
                         <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto text-xl font-black text-[#fc670c]">02</div>
-                        <h4 class="font-black uppercase text-[10px] tracking-widest">Договор</h4>
+                        <h3 class="font-black uppercase text-[10px] tracking-widest">Договор</h3>
                     </div>
                     <div class="text-center space-y-4">
                         <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto text-xl font-black text-[#fc670c]">03</div>
-                        <h4 class="font-black uppercase text-[10px] tracking-widest">3D Модель</h4>
+                        <h3 class="font-black uppercase text-[10px] tracking-widest">3D Модель</h3>
                     </div>
                     <div class="text-center space-y-4">
                         <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto text-xl font-black text-[#fc670c]">04</div>
-                        <h4 class="font-black uppercase text-[10px] tracking-widest">Чертежи</h4>
+                        <h3 class="font-black uppercase text-[10px] tracking-widest">Чертежи</h3>
                     </div>
                     <div class="text-center space-y-4">
                         <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto text-xl font-black text-[#fc670c]">05</div>
-                        <h4 class="font-black uppercase text-[10px] tracking-widest">Выдача</h4>
+                        <h3 class="font-black uppercase text-[10px] tracking-widest">Выдача</h3>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Quiz -->
-        <section id="quiz" class="py-32 bg-slate-50">
+        <section id="quiz" class="py-32 bg-slate-50" aria-label="Обсуждение проекта">
             <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-24 items-center">
                 <div class="space-y-8">
                     <h2 class="text-4xl">Обсудим проект?</h2>
@@ -108,9 +152,42 @@
         </section>
     </main>
 
-    <footer class="bg-[#111827] text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. Экспертиза. Качество. Скорость.</p>
+    <footer class="bg-[#111827] text-white pt-24 pb-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+            <div>
+                <a href="index.html" class="logo-font text-3xl mb-6 block"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+                <p class="text-slate-400 text-xs">Проектируем инженерные сети для бизнеса и частных лиц в Москве с 2012 года. BIM-моделирование как стандарт качества.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Навигация</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="services.html" class="hover:text-white">Системы</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white">Кейсы</a></li>
+                    <li><a href="prices.html" class="hover:text-white">Цены</a></li>
+                    <li><a href="about.html" class="hover:text-white">О бюро</a></li>
+                    <li><a href="sro.html" class="hover:text-white">СРО</a></li>
+                    <li><a href="contacts.html" class="hover:text-white">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Объекты</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="restorany.html" class="hover:text-white">Рестораны</a></li>
+                    <li><a href="ofisy.html" class="hover:text-white">Офисы</a></li>
+                    <li><a href="kvartiry.html" class="hover:text-white">Квартиры и дома</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Контакты</h4>
+                <address class="not-italic space-y-4 text-sm text-slate-300">
+                    <p><i class="fas fa-map-marker-alt text-[#fc670c] mr-3" aria-hidden="true"></i>Москва, Саввинская наб. 15</p>
+                    <p><i class="fas fa-phone text-[#fc670c] mr-3" aria-hidden="true"></i><a href="tel:+74950000000" class="hover:text-white">+7 (495) 000-00-00</a></p>
+                    <p><i class="fas fa-envelope text-[#fc670c] mr-3" aria-hidden="true"></i><a href="mailto:info@hot-plan.ru" class="hover:text-white">info@hot-plan.ru</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-xs text-slate-500">
+            <p>© 2024 HOTPLAN. Все права защищены. <a href="#" class="hover:text-white">Политика конфиденциальности</a>.</p>
         </div>
     </footer>
 

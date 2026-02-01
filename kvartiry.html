@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио инженерных проектов: рестораны, офисы, квартиры | Hot-Plan</title>
+    <title>Проектирование инженерных систем квартир и домов в Москве | Hot-Plan</title>
+    <meta name="description" content="Проектирование инженерных систем для квартир, пентхаусов и загородных домов. Системы 'Умный дом', климат-контроль, бесшумная канализация.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    
+
     <!-- Preload critical assets -->
     <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
@@ -21,7 +22,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
 
     <style>
-        /* Fallback font metrics to reduce CLS */
         @font-face {
           font-family: 'Inter Fallback';
           src: local('Arial');
@@ -45,7 +45,7 @@
       },{
         "@type": "ListItem",
         "position": 2,
-        "name": "Кейсы"
+        "name": "Квартиры и дома"
       }]
     }
     </script>
@@ -58,66 +58,53 @@
                 <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
                 <a href="restorany.html" class="hover:text-[#fc670c]">Рестораны</a>
                 <a href="ofisy.html" class="hover:text-[#fc670c]">Офисы</a>
-                <a href="kvartiry.html" class="hover:text-[#fc670c]">Квартиры</a>
-                <a href="portfolio.html" class="text-white">Кейсы</a>
+                <a href="kvartiry.html" class="text-white">Квартиры</a>
+                <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
                 <a href="prices.html" class="hover:text-[#fc670c]">Цены</a>
                 <a href="sro.html" class="hover:text-[#fc670c]">СРО</a>
             </nav>
             <div class="hidden lg:flex items-center gap-6">
                 <a href="tel:+74950000000" class="text-sm font-black text-white">+7 (495) 000-00-00</a>
-                <a href="contacts.html" class="cta-button px-6 py-3 text-[10px] font-black uppercase rounded-lg">Связаться</a>
+                <a href="#quiz" class="cta-button px-6 py-3 text-[10px] font-black uppercase">КП за 30 мин</a>
             </div>
         </div>
     </header>
 
-    <main class="py-24">
-        <div class="container mx-auto px-4">
-            <h1 class="text-5xl md:text-8xl font-black uppercase mb-16 text-center leading-none">Реализованные <br><span class="text-[#fc670c]">объекты</span></h1>
-            
-            <!-- Category: Restaurants -->
-            <section class="mb-32" aria-labelledby="horeca-title">
-                <h2 id="horeca-title" class="text-2xl font-black uppercase mb-10 border-l-4 border-[#fc670c] pl-6 tracking-widest">Рестораны и HoReCa</h2>
-                <div class="grid md:grid-cols-2 gap-12">
-                    <article class="group cursor-pointer" aria-labelledby="moremania-case">
-                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
-                            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=75&w=800&fm=webp" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Интерьер ресторана Моремания" loading="lazy" width="800" height="450">
-                        </div>
-                        <h3 id="moremania-case" class="text-xl font-black uppercase mb-2 text-[#111827]">Моремания (ТЦ Ботаника Молл)</h3>
-                        <p class="text-sm text-slate-500">Комплексный проект <a href="services.html#vent-service" class="text-[#fc670c] hover:underline">ОВ</a>, <a href="services.html#water-service" class="text-[#fc670c] hover:underline">ВК</a>, <a href="services.html#electric-service" class="text-[#fc670c] hover:underline">ЭОМ</a> в Revit. Решение проблемы малого уклона канализации.</p>
-                    </article>
-                    <article class="group cursor-pointer" aria-labelledby="coffeemania-case">
-                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
-                            <img src="https://images.unsplash.com/photo-1501339817302-3e26c4856855?auto=format&fit=crop&q=75&w=800&fm=webp" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Фасад Кофемании на Саввинской набережной" loading="lazy" width="800" height="450">
-                        </div>
-                        <h3 id="coffeemania-case" class="text-xl font-black uppercase mb-2 text-[#111827]">Кофемания (Саввинская наб.)</h3>
-                        <p class="text-sm text-slate-500"><a href="services.html#vent-service" class="text-[#fc670c] hover:underline">Вентиляция</a> с рекуперацией тепла в историческом здании. Экономия 40% лимитов мощности.</p>
-                    </article>
-                </div>
-            </section>
+    <main>
+        <section class="py-24 bg-slate-50" aria-label="Инженерия для квартир и домов">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl md:text-7xl font-black uppercase mb-8">Инженерия для <br><span class="text-[#fc670c]">квартир и домов</span></h1>
+                <p class="text-xl text-slate-500 max-w-2xl">Создаем премиальный комфорт в жилых пространствах. Интеграция с дизайн-проектом, системы "Умный дом" и климат-контроль.</p>
+            </div>
+        </section>
 
-            <!-- Category: Residential -->
-            <section class="mb-32" aria-labelledby="residential-title">
-                <h2 id="residential-title" class="text-2xl font-black uppercase mb-10 border-l-4 border-[#fc670c] pl-6 tracking-widest">Жилые объекты (Премиум)</h2>
-                <div class="grid md:grid-cols-2 gap-12">
-                    <article class="group cursor-pointer" aria-labelledby="penthouse-case">
-                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
-                            <img src="https://images.unsplash.com/photo-1600607687940-4e701330841b?auto=format&fit=crop&q=75&w=800&fm=webp" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Гостиная в пентхаусе" loading="lazy" width="800" height="450">
-                        </div>
-                        <h3 id="penthouse-case" class="text-xl font-black uppercase mb-2 text-[#111827]">Пентхаус в ЖК Кадашевский Пассаж</h3>
-                        <p class="text-sm text-slate-500">Проектирование увлажнения воздуха и системы "Умный дом" на 450 м².</p>
-                    </article>
-                    <article class="group cursor-pointer" aria-labelledby="house-case">
-                        <div class="aspect-video bg-slate-100 rounded-[40px] overflow-hidden mb-6 border border-slate-200">
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=75&w=800&fm=webp" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Современный загородный дом" loading="lazy" width="800" height="450">
-                        </div>
-                        <h3 id="house-case" class="text-xl font-black uppercase mb-2 text-[#111827]">Загородный дом (КП Новая Рига)</h3>
-                        <p class="text-sm text-slate-500">Проект ИТП и котельной 250 кВт. Интеграция солнечных коллекторов в Revit.</p>
-                    </article>
+        <section class="py-32" aria-label="Ключевые услуги для жилых объектов">
+            <div class="container mx-auto px-4 grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <i class="fas fa-home-alt text-3xl text-[#fc670c]" aria-hidden="true"></i>
+                    <h2 class="font-black uppercase">"Умный дом"</h2>
+                    <p class="text-sm text-slate-500">Проектирование систем автоматизации для управления освещением, климатом, шторами и мультимедиа с одного устройства.</p>
                 </div>
-            </section>
-        </div>
+                <div class="space-y-4">
+                    <i class="fas fa-snowflake text-3xl text-[#fc670c]" aria-hidden="true"></i>
+                    <h2 class="font-black uppercase">Климат-контроль</h2>
+                    <p class="text-sm text-slate-500">Интеграция систем канального кондиционирования, теплого пола и увлажнения воздуха для идеального микроклимата.</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-volume-mute text-3xl text-[#fc670c]" aria-hidden="true"></i>
+                    <h2 class="font-black uppercase">Бесшумная канализация</h2>
+                    <p class="text-sm text-slate-500">Применение шумопоглощающих труб и материалов для максимального акустического комфорта в спальнях и гостиных.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="py-20 bg-slate-50" aria-label="Расчет стоимости для квартиры">
+            <div class="container mx-auto px-4">
+                <div id="quiz-root"></div>
+            </div>
+        </section>
     </main>
-
+    
     <footer class="bg-[#111827] text-white pt-24 pb-12">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
             <div>

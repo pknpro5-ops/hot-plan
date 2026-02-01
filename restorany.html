@@ -6,75 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проектирование инженерных систем ресторанов под ключ в Москве: цены, СРО | Hot-Plan</title>
     <meta name="description" content="Профессиональное проектирование ОВ, ВК, ЭОМ для ресторанов. Опыт работы с «Кофеманией» и «Мореманией». 3D проектирование в Revit, гарантия согласования в ТЦ.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        /* Fallback font metrics to reduce CLS */
+        @font-face {
+          font-family: 'Inter Fallback';
+          src: local('Arial');
+          ascent-override: 92.77%;
+          descent-override: 24.41%;
+          line-gap-override: 0.00%;
+          size-adjust: 107.80%;
+        }
         :root { --brand-orange: #fc670c; --brand-dark: #111827; }
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', 'Inter Fallback', sans-serif; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://pknpro5-ops.github.io/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Рестораны"
+      }]
+    }
+    </script>
 </head>
 <body class="bg-white">
-    <header class="bg-[#111827] py-4">
+    <header class="sticky top-0 z-50 bg-[#111827] border-b border-white/5 py-4 backdrop-blur-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="font-black text-2xl text-white">HOT<span class="text-[#fc670c]">PLAN</span></a>
-            <nav class="hidden md:flex gap-6 text-[9px] font-black uppercase text-white/70 tracking-widest">
-                <a href="services.html">Системы</a>
+            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+            <nav role="navigation" aria-label="Основная навигация сайта" class="hidden xl:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
+                <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
                 <a href="restorany.html" class="text-white">Рестораны</a>
-                <a href="ofisy.html">Офисы</a>
-                <a href="portfolio.html">Кейсы</a>
-                <a href="prices.html">Цены</a>
+                <a href="ofisy.html" class="hover:text-[#fc670c]">Офисы</a>
+                <a href="kvartiry.html" class="hover:text-[#fc670c]">Квартиры</a>
+                <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
+                <a href="prices.html" class="hover:text-[#fc670c]">Цены</a>
+                <a href="sro.html" class="hover:text-[#fc670c]">СРО</a>
             </nav>
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="tel:+74950000000" class="text-sm font-black text-white">+7 (495) 000-00-00</a>
+                <a href="contacts.html" class="cta-button px-6 py-3 text-[10px] font-black uppercase rounded-lg">Связаться</a>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero -->
-        <section class="py-32 bg-slate-50 relative overflow-hidden">
+        <section class="py-32 bg-slate-50 relative overflow-hidden" aria-label="Инженерия для ресторанов и кафе">
             <div class="container mx-auto px-4 relative z-10">
                 <h1 class="text-5xl md:text-7xl font-black uppercase mb-8 leading-none">Инженерия для <br><span class="text-[#fc670c]">ресторанов и кафе</span></h1>
                 <p class="text-xl text-slate-500 max-w-3xl font-medium">Специализированное проектирование для HoReCa с учетом требований СанПиН 2.3.6.1079-01. Опыт работы с ведущими сетями Москвы: «Кофемания», «Моремания», «Танжир Лоунж».</p>
             </div>
-            <div class="absolute right-0 top-0 h-full w-1/3 opacity-10 bg-[url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800')] bg-cover hidden lg:block"></div>
+            <div class="absolute right-0 top-0 h-full w-1/3 opacity-10 bg-[url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=75&w=800&fm=webp')] bg-cover hidden lg:block" role="presentation"></div>
         </section>
 
         <!-- Features -->
-        <section class="py-32">
+        <section class="py-32" aria-label="Наши преимущества для рестораторов">
             <div class="container mx-auto px-4 grid md:grid-cols-2 gap-20">
                 <div class="space-y-12">
                     <h2 class="text-3xl font-black uppercase">Почему рестораторы <br>выбирают нас?</h2>
                     <div class="space-y-8">
                         <div class="flex gap-6">
-                            <div class="w-12 h-12 shrink-0 bg-orange-50 rounded-xl flex items-center justify-center text-[#fc670c]"><i class="fas fa-wind text-xl"></i></div>
+                            <div class="w-12 h-12 shrink-0 bg-orange-50 rounded-xl flex items-center justify-center text-[#fc670c]"><i class="fas fa-wind text-xl" aria-hidden="true"></i></div>
                             <div>
-                                <h4 class="font-bold text-lg mb-2 uppercase">Расчет технологических вытяжек</h4>
+                                <h3 class="font-bold text-lg mb-2 uppercase">Расчет технологических вытяжек</h3>
                                 <p class="text-sm text-slate-500">Проектируем раздельные системы для горячего цеха и обеденного зала. Исключаем запахи кухни в гостевой зоне.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="w-12 h-12 shrink-0 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600"><i class="fas fa-tint text-xl"></i></div>
+                            <div class="w-12 h-12 shrink-0 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600"><i class="fas fa-tint text-xl" aria-hidden="true"></i></div>
                             <div>
-                                <h4 class="font-bold text-lg mb-2 uppercase">Системы жироочистки</h4>
+                                <h3 class="font-bold text-lg mb-2 uppercase">Системы жироочистки</h3>
                                 <p class="text-sm text-slate-500">Подбор и расчет жироуловителей для согласования с Мосводоканалом и администрациями ТЦ.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="w-12 h-12 shrink-0 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600"><i class="fas fa-bolt text-xl"></i></div>
+                            <div class="w-12 h-12 shrink-0 bg-yellow-50 rounded-xl flex items-center justify-center text-yellow-600"><i class="fas fa-bolt text-xl" aria-hidden="true"></i></div>
                             <div>
-                                <h4 class="font-bold text-lg mb-2 uppercase">Выделенная мощность (ЭОМ)</h4>
+                                <h3 class="font-bold text-lg mb-2 uppercase">Выделенная мощность (ЭОМ)</h3>
                                 <p class="text-sm text-slate-500">Точный расчет нагрузок кухонного оборудования (пароконвектоматы, плиты). Снижаем требуемую мощность на 15-20%.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-slate-100 rounded-[48px] overflow-hidden border-8 border-slate-50 shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover grayscale" alt="Ресторанная инженерия">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=1200&fm=webp" class="w-full h-full object-cover grayscale" alt="Интерьер современного ресторана с продуманной инженерией" loading="lazy" width="1200" height="800">
                 </div>
             </div>
         </section>
 
         <!-- Trust Block -->
-        <section class="py-20 bg-[#111827] text-white">
+        <section class="py-20 bg-[#111827] text-white" aria-label="Наши клиенты">
             <div class="container mx-auto px-4 text-center opacity-40 grayscale flex flex-wrap justify-center gap-16 text-2xl font-black uppercase italic">
                 <span>Moremania</span>
                 <span>Coffeemania</span>
@@ -84,8 +127,43 @@
         </section>
     </main>
 
-    <footer class="bg-[#111827] text-white py-12 text-center">
-        <p class="text-[9px] font-black uppercase tracking-widest text-slate-600">© 2024 HOTPLAN. Специализация на HoReCa проектах.</p>
+    <footer class="bg-[#111827] text-white pt-24 pb-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+            <div>
+                <a href="index.html" class="logo-font text-3xl mb-6 block"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+                <p class="text-slate-400 text-xs">Проектируем инженерные сети для бизнеса и частных лиц в Москве с 2012 года. BIM-моделирование как стандарт качества.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Навигация</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="services.html" class="hover:text-white">Системы</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white">Кейсы</a></li>
+                    <li><a href="prices.html" class="hover:text-white">Цены</a></li>
+                    <li><a href="about.html" class="hover:text-white">О бюро</a></li>
+                    <li><a href="sro.html" class="hover:text-white">СРО</a></li>
+                    <li><a href="contacts.html" class="hover:text-white">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Объекты</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="restorany.html" class="hover:text-white">Рестораны</a></li>
+                    <li><a href="ofisy.html" class="hover:text-white">Офисы</a></li>
+                    <li><a href="kvartiry.html" class="hover:text-white">Квартиры и дома</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Контакты</h4>
+                <address class="not-italic space-y-4 text-sm text-slate-300">
+                    <p><i class="fas fa-map-marker-alt text-[#fc670c] mr-3" aria-hidden="true"></i>Москва, Саввинская наб. 15</p>
+                    <p><i class="fas fa-phone text-[#fc670c] mr-3" aria-hidden="true"></i><a href="tel:+74950000000" class="hover:text-white">+7 (495) 000-00-00</a></p>
+                    <p><i class="fas fa-envelope text-[#fc670c] mr-3" aria-hidden="true"></i><a href="mailto:info@hot-plan.ru" class="hover:text-white">info@hot-plan.ru</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-xs text-slate-500">
+            <p>© 2024 HOTPLAN. Все права защищены. <a href="#" class="hover:text-white">Политика конфиденциальности</a>.</p>
+        </div>
     </footer>
     <script type="module" src="./index.tsx"></script>
 </body>

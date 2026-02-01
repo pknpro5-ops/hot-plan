@@ -5,62 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проектирование инженерных сетей офисов в Москве — Hot-Plan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        /* Fallback font metrics to reduce CLS */
+        @font-face {
+          font-family: 'Inter Fallback';
+          src: local('Arial');
+          ascent-override: 92.77%;
+          descent-override: 24.41%;
+          line-gap-override: 0.00%;
+          size-adjust: 107.80%;
+        }
         :root { --brand-orange: #fc670c; --brand-dark: #111827; }
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', 'Inter Fallback', sans-serif; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://pknpro5-ops.github.io/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Офисы"
+      }]
+    }
+    </script>
 </head>
 <body class="bg-white">
-    <header class="bg-[#111827] py-4">
+    <header class="sticky top-0 z-50 bg-[#111827] border-b border-white/5 py-4 backdrop-blur-lg">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="font-black text-2xl text-white">HOT<span class="text-[#fc670c]">PLAN</span></a>
-            <nav class="hidden md:flex gap-6 text-[9px] font-black uppercase text-white/70">
-                <a href="services.html">Системы</a>
-                <a href="restorany.html">Рестораны</a>
+            <a href="index.html" class="logo-font text-3xl"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+            <nav role="navigation" aria-label="Основная навигация сайта" class="hidden xl:flex gap-6 text-[9px] font-black uppercase tracking-[0.2em] text-white/70">
+                <a href="services.html" class="hover:text-[#fc670c]">Системы</a>
+                <a href="restorany.html" class="hover:text-[#fc670c]">Рестораны</a>
                 <a href="ofisy.html" class="text-white">Офисы</a>
-                <a href="portfolio.html">Кейсы</a>
-                <a href="prices.html">Цены</a>
+                <a href="kvartiry.html" class="hover:text-[#fc670c]">Квартиры</a>
+                <a href="portfolio.html" class="hover:text-[#fc670c]">Кейсы</a>
+                <a href="prices.html" class="hover:text-[#fc670c]">Цены</a>
+                <a href="sro.html" class="hover:text-[#fc670c]">СРО</a>
             </nav>
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="tel:+74950000000" class="text-sm font-black text-white">+7 (495) 000-00-00</a>
+                <a href="#quiz" class="cta-button px-6 py-3 text-[10px] font-black uppercase rounded-lg">КП за 30 мин</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="py-24 bg-slate-50">
+        <section class="py-24 bg-slate-50" aria-label="Инженерия для офисов">
             <div class="container mx-auto px-4">
                 <h1 class="text-5xl md:text-7xl font-black uppercase mb-8">Инженерия для <br><span class="text-[#fc670c]">офисов</span></h1>
                 <p class="text-xl text-slate-500 max-w-2xl">Создаем комфортную среду для работы в БЦ классов А и В. Системы климат-контроля, СКС и серверные.</p>
             </div>
         </section>
 
-        <section class="py-32">
+        <section class="py-32" aria-label="Ключевые услуги для офисов">
             <div class="container mx-auto px-4 grid md:grid-cols-3 gap-12">
                 <div class="space-y-4">
-                    <i class="fas fa-desktop text-3xl text-[#fc670c]"></i>
-                    <h3 class="font-black uppercase">Микроклимат</h3>
+                    <i class="fas fa-desktop text-3xl text-[#fc670c]" aria-hidden="true"></i>
+                    <h2 class="font-black uppercase">Микроклимат</h2>
                     <p class="text-sm text-slate-500">Зональное управление температурой и контроль уровня CO2 для поддержания работоспособности сотрудников.</p>
                 </div>
                 <div class="space-y-4">
-                    <i class="fas fa-server text-3xl text-[#fc670c]"></i>
-                    <h3 class="font-black uppercase">Серверные</h3>
+                    <i class="fas fa-server text-3xl text-[#fc670c]" aria-hidden="true"></i>
+                    <h2 class="font-black uppercase">Серверные</h2>
                     <p class="text-sm text-slate-500">Проектирование прецизионного кондиционирования и бесперебойного питания (ИБП).</p>
                 </div>
                 <div class="space-y-4">
-                    <i class="fas fa-network-wired text-3xl text-[#fc670c]"></i>
-                    <h3 class="font-black uppercase">Слаботочные сети</h3>
+                    <i class="fas fa-network-wired text-3xl text-[#fc670c]" aria-hidden="true"></i>
+                    <h2 class="font-black uppercase">Слаботочные сети</h2>
                     <p class="text-sm text-slate-500">Разработка СКС, Wi-Fi покрытия и систем контроля доступа (СКУД).</p>
                 </div>
             </div>
         </section>
 
-        <section id="quiz" class="py-20 bg-slate-50">
+        <section id="quiz" class="py-20 bg-slate-50" aria-label="Расчет стоимости для офиса">
             <div class="container mx-auto px-4">
                 <div id="quiz-root"></div>
             </div>
         </section>
     </main>
+    <footer class="bg-[#111827] text-white pt-24 pb-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+            <div>
+                <a href="index.html" class="logo-font text-3xl mb-6 block"><span class="text-[#fc670c]">HOT</span><span class="text-white">PLAN</span></a>
+                <p class="text-slate-400 text-xs">Проектируем инженерные сети для бизнеса и частных лиц в Москве с 2012 года. BIM-моделирование как стандарт качества.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Навигация</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="services.html" class="hover:text-white">Системы</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white">Кейсы</a></li>
+                    <li><a href="prices.html" class="hover:text-white">Цены</a></li>
+                    <li><a href="about.html" class="hover:text-white">О бюро</a></li>
+                    <li><a href="sro.html" class="hover:text-white">СРО</a></li>
+                    <li><a href="contacts.html" class="hover:text-white">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Объекты</h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><a href="restorany.html" class="hover:text-white">Рестораны</a></li>
+                    <li><a href="ofisy.html" class="hover:text-white">Офисы</a></li>
+                    <li><a href="kvartiry.html" class="hover:text-white">Квартиры и дома</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-[10px] uppercase tracking-[0.3em] mb-8 text-[#fc670c]">Контакты</h4>
+                <address class="not-italic space-y-4 text-sm text-slate-300">
+                    <p><i class="fas fa-map-marker-alt text-[#fc670c] mr-3" aria-hidden="true"></i>Москва, Саввинская наб. 15</p>
+                    <p><i class="fas fa-phone text-[#fc670c] mr-3" aria-hidden="true"></i><a href="tel:+74950000000" class="hover:text-white">+7 (495) 000-00-00</a></p>
+                    <p><i class="fas fa-envelope text-[#fc670c] mr-3" aria-hidden="true"></i><a href="mailto:info@hot-plan.ru" class="hover:text-white">info@hot-plan.ru</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-xs text-slate-500">
+            <p>© 2024 HOTPLAN. Все права защищены. <a href="#" class="hover:text-white">Политика конфиденциальности</a>.</p>
+        </div>
+    </footer>
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
